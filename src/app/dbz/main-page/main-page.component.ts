@@ -1,7 +1,8 @@
-import { ClassGetter } from '@angular/compiler/src/output/output_ast';
 import { Component } from '@angular/core';
 
 import { Personaje } from '../interfaces/dbz.interface';
+
+import { DbzService } from '../services/dbz.service';
 
 @Component({
   selector: 'app-main-page',
@@ -40,5 +41,9 @@ export class MainPageComponent {
   // cambiarNombre(event: any) {
   //   console.log(event.target.value);
   // }
+
+  constructor( private dbzService: DbzService ) {
+
+  }
 
 }

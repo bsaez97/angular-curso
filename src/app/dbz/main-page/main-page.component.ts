@@ -10,40 +10,37 @@ import { DbzService } from '../services/dbz.service';
 })
 export class MainPageComponent {
 
-  personajes: Personaje[] = [
-    {
-      nombre: 'Goku',
-      poder: 15000
-    },
-    {
-      nombre: 'Vegeta',
-      poder: 7500
-    }
-  ]
+  // personajes: Personaje[] = [];
 
   nuevo: Personaje = {
     nombre: "Marstro Roshi",
     poder: 1000
   };
 
+  // get personajes(): Personaje[] {
+  //   return this.dbzService.personajes;
+  // }
+
   // agregar( event: any ) {
   //   event.preventDefault();
   //   console.log(event);
   // }
 
-  agregarNuevoPersonaje(argumento: Personaje) {
-    // console.log('main page console');
-    // console.log(argumento);
-    // debugger; //brakepoint en codigo
-    this.personajes.push(argumento);
-  }
+  // agregarNuevoPersonaje(argumento: Personaje) {
+  //   // console.log('main page console');
+  //   // console.log(argumento);
+  //   // debugger; //brakepoint en codigo
+  //   this.personajes.push(argumento);
+  // }
 
   // cambiarNombre(event: any) {
   //   console.log(event.target.value);
   // }
 
-  constructor( private dbzService: DbzService ) {
+  // constructor( private dbzService: DbzService ) {
+  //   // this.personajes = this.dbzService.personajes;
+  // }
 
-  }
+  constructor() {}
 
 }
